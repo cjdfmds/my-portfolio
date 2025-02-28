@@ -1,0 +1,21 @@
+/* Add this to your styles.css file */
+.blue-circle-bg {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(50%, -50%);
+    width: 1000px; /* Adjust the size as needed */
+    height: 1000px; /* Adjust the size as needed */
+    background-color: rgba(255, 255, 255, 0.1); /* White fill with 50% opacity */
+    border: 80px solid rgba(2, 19, 253, 0.05); /* Adjust the border thickness and color as needed */
+    border-radius: 50%;
+    z-index: 10;
+}
+.fixed-container {
+    max-width: 1200px; /* Adjust the size as needed */
+    max-height: 900px; /* Adjust the size as needed */
+    height: 900px; /* Adjust the size as needed */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 0 20px; /* Add some padding for better spacing */
+    border-bottom: 2px solid #000; /* Add a bottom border to guide the end of the page */
+}
