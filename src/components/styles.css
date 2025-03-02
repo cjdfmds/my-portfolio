@@ -1,21 +1,44 @@
-/* Add this to your styles.css file */
-.blue-circle-bg {
-    position: absolute;
-    top: 50%;
-    left: 15%;
-    transform: translate(50%, -50%);
-    width: 1000px; /* Adjust the size as needed */
-    height: 1000px; /* Adjust the size as needed */
-    background-color: rgba(255, 255, 255, 0.1); /* White fill with 50% opacity */
-    border: 80px solid rgba(2, 19, 253, 0.05); /* Adjust the border thickness and color as needed */
-    border-radius: 50%;
-    z-index: 10;
+/* styles.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
-.fixed-container {
-    max-width: 1200px; /* Adjust the size as needed */
-    max-height: 900px; /* Adjust the size as needed */
-    height: 900px; /* Adjust the size as needed */
-    margin: 0 auto; /* Center the container horizontally */
-    padding: 0 20px; /* Add some padding for better spacing */
-    border-bottom: 2px solid #000; /* Add a bottom border to guide the end of the page */
+
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.hover\:bg-blue-700:hover {
+  background-color: #1e40af;
+}
+
+.transition-colors {
+  transition: background-color 0.3s ease;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+
+  
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-30%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  animation: marquee 20s linear infinite;
+  white-space: nowrap;
+}
+
+.animate-marquee > * {
+  display: inline-block;
+  margin-right: 3rem; /* Adjust spacing between icons */
 }
