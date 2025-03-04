@@ -5,6 +5,8 @@ import "./App.css";
 import { Profile } from "./components/Profile1";
 import { Summary } from "./components/Summary2";
 import { Skills } from "./components/Skills3";
+import { School } from "./components/School4";
+import { References } from "./components/References5";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -14,6 +16,8 @@ function App() {
       <Profile />
       <Summary />
       <Skills />
+      <School />
+      <References />
     </>
   );
 }

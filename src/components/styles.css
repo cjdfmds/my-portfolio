@@ -34,11 +34,24 @@ body {
 
 .animate-marquee {
   display: flex;
-  animation: marquee 20s linear infinite;
+  animation: marquee 60s linear infinite;
   white-space: nowrap;
 }
 
 .animate-marquee > * {
   display: inline-block;
-  margin-right: 3rem; /* Adjust spacing between icons */
+  margin-right: 5rem; /* Adjust spacing between icons */
+}
+
+.highlight {
+  animation: highlight-animation 2s ease-in-out;
+}
+
+@keyframes highlight-animation {
+  0% {
+    background-color: rgb(0, 255, 200);
+  }
+  100% {
+    background-color: transparent;
+  }
 }
