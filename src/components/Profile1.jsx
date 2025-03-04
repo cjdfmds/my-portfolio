@@ -48,7 +48,7 @@ const Profile = () => {
                 <a href="#projects">Projects</a>
               </li>
               <li>
-                <a href="/resume.pdf" download>
+                <a href="/resume.pdf" download="resume.pdf">
                   Resume
                 </a>
               </li>
