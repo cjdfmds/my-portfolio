@@ -1,37 +1,32 @@
 import React from "react";
-import "./styles.css"; // Make sure to import your CSS file
+import "./styles.css";
 import MDS from "../assets/school.png";
 
 const School = () => {
   return (
-    <section id="projects"  className="relative py-10 bg-blue-950 h-screen flex flex-col px-6 md:px-20">
-      {/* Left side image - takes up 1/4 of the page width and full height */}
-      <div className="absolute left-0 top-0 w-1/4 h-full bg-blue-900 flex items-center justify-center">
+    <section id="projects" className="relative py-10 bg-blue-950 min-h-screen flex flex-col px-4 sm:px-6 md:px-12 lg:px-20">
+      {/* Left side image - full width on mobile, 1/4 width on larger screens */}
+      <div className="lg:absolute lg:left-0 lg:top-0 w-full lg:w-1/4 h-64 lg:h-full bg-blue-900 flex items-center justify-center mb-6 lg:mb-0">
         <img
           src={MDS}
           alt="School image"
           className="object-cover h-full w-full"
         />
       </div>
-      {/* Content area - pushed to the right to make space for the image */}
-      <div className="w-3/4 h-full flex flex-col ml-auto tracking-wider">
-        {" "}
-        {/* Changed to ml-auto */}
-        {/* First row */}
-        <div className="w-full h-1/2 flex items-center justify-center border-blue-800 pl-6">
+      
+      {/* Content area - full width on mobile, pushed right on larger screens */}
+      <div className="w-full lg:w-3/4 lg:ml-auto tracking-wider lg:pl-8">
+        {/* Education section */}
+        <div className="w-full lg:h-1/2 flex items-start lg:items-center justify-start mb-8 lg:mb-0">
           <div className="text-white max-w-full">
-            {" "}
-            {/* Added max-w-full */}
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-200 font-inter mb-4">
               Education
             </h2>
-            <p className="text-3xl md:text-4xl lg:text-5xl font-bold font-inter">
+            <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold font-inter">
               Bachelor of Software Engineering
             </p>
-            <p className="text-xl mb-6 font-bold">Media Design School | Auckland, NZ </p>
-            <p className="text-xl pr-6">
-              {" "}
-              {/* Added right padding */}
+            <p className="text-lg sm:text-xl mb-6 font-bold">Media Design School | Auckland, NZ </p>
+            <p className="text-base sm:text-lg lg:text-xl pr-2 sm:pr-4 lg:pr-6">
               Fully participated in Agile Software Development Object Oriented
               Design methodologies and Software Design principles. Worked with
               small teams on numerous projects using Unity, Unreal, OpenGL and
@@ -41,39 +36,39 @@ const School = () => {
             </p>
           </div>
         </div>
-        {/* Second row */}
-        <div className="w-full h-2/3 flex flex-col pl-6 pr-6 tracking-wider">
-          <div className="text-white max-w-full">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-200 font-inter mb-4">
+        
+        {/* Project Spotlight section */}
+        <div className="w-full lg:h-2/3 flex flex-col pr-2 sm:pr-4 lg:pr-6 tracking-wider">
+          <div className="text-white max-w-full mb-4">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-200 font-inter mt-12">
               Project Spotlight
             </h2>
           </div>
 
-          {/* Split columns container */}
-          <div className="flex w-full h-full flex-col md:flex-row">
-            {/* Left column */}
-            <div className="w-full md:w-1/2 flex flex-col mr-4">
-              {/* Top row (1/4 height) with basis tags */}
-              <div className="h-1/4 mb-4 rounded p-4">
+          {/* Projects container - stacked on mobile, side by side on larger screens */}
+          <div className="flex w-full flex-col md:flex-row gap-8 md:gap-4">
+            {/* Project 01 */}
+            <div className="w-full md:w-1/2 flex flex-col">
+              {/* Project header */}
+              <div className="mb-4">
                 <div className="flex flex-wrap gap-2 items-center">
-                  <span className="text-blue-300 rounded font-bold text-4xl md:text-5xl lg:text-6xl font-inter">
+                  <span className="text-blue-300 font-bold text-4xl md:text-5xl lg:text-6xl font-inter">
                     01
                   </span>
-                  <div className="text-center">
-                    <div className="text-white text-center font-bold rounded text-2xl md:text-3xl lg:text-4xl font-inter">
+                  <div>
+                    <div className="text-white font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl font-inter">
                       E - Commerce{" "}
                     </div>
-                    <div className="text-white text-center font-bold rounded pl-8 text-2xl md:text-3xl lg:text-4xl font-inter">
-                      {" "}
+                    <div className="text-white font-bold pl-0 sm:pl-4 md:pl-0 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-inter">
                       Web Application
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* Bottom row (3/4 height) */}
-              <div className="h-3/4 bg-blue-950 border-t-2 border-blue-500 rounded p-4">
-                <p className="text-white text-base md:text-lg lg:text-xl font-inter">
+              {/* Project description */}
+              <div className="bg-blue-950 border-t-2 border-blue-500 rounded p-4 flex-grow">
+                <p className="text-white text-sm sm:text-base md:text-lg lg:text-xl font-inter">
                   Developed a web application that allows users to input and
                   output Customer, Product, Store and Sales Data. Implemented a
                   Code-First approach based on Entity Framework, allowing for
@@ -85,29 +80,28 @@ const School = () => {
               </div>
             </div>
 
-            {/* Right column */}
-            <div className="w-full md:w-1/2 flex flex-col mr-4">
-              {/* Top row (1/4 height) with basis tags */}
-              <div className="h-1/4 mb-4 rounded p-4">
+            {/* Project 02 */}
+            <div className="w-full md:w-1/2 flex flex-col">
+              {/* Project header */}
+              <div className="mb-4">
                 <div className="flex flex-wrap gap-2 items-center">
-                  <span className="text-blue-300 rounded font-bold text-4xl md:text-5xl lg:text-6xl font-inter">
+                  <span className="text-blue-300 font-bold text-4xl md:text-5xl lg:text-6xl font-inter">
                     02
                   </span>
-                  <div className="text-center pl-8">
-                    <div className="text-white text-center font-bold rounded text-2xl md:text-3xl lg:text-4xl font-inter">
+                  <div className="pl-0 sm:pl-4 md:pl-8">
+                    <div className="text-white font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl font-inter">
                       Talent Matching{" "}
                     </div>
-                    <div className="text-white text-center font-bold rounded text-2xl md:text-3xl lg:text-4xl font-inter">
-                      {" "}
+                    <div className="text-white font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl font-inter">
                       Web Application
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* Bottom row (3/4 height) */}
-              <div className="h-3/4 bg-blue-950 border-t-2 border-blue-500 rounded p-4">
-                <p className="text-white text-base md:text-lg lg:text-xl font-inter">
+              {/* Project description */}
+              <div className="bg-blue-950 border-t-2 border-blue-500 rounded p-4 flex-grow">
+                <p className="text-white text-sm sm:text-base md:text-lg lg:text-xl font-inter">
                   Developed User Details Components including fields for
                   Address, Nationality, Languages, Skills, Work Experience, Visa
                   Status, Job Seeking Status, and Photo Upload. Front-End:
