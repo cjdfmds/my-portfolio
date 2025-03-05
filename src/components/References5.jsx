@@ -64,7 +64,7 @@ const References = () => {
           {/* Testimony section */}
           <div className="w-full sm:w-2/3 p-4">
             <h4 className="text-lg sm:text-xl font-bold text-blue-900 mb-1">Andy McKelvey</h4>
-            <p className="text-gray-600 mb-1 font-bold">Technical Director</p>
+            <p className="text-gray-600 mb-1 font-bold">Solutions Architect</p>
             <p className="text-gray-600 mb-2 font-bold">MVP Studio</p>
             <p className="text-black italic text-sm sm:text-base">
               "It was a pleasure working with Chris during his bootcamp at MVP Studio.
@@ -91,7 +91,7 @@ const References = () => {
           {/* Testimony section */}
           <div className="w-full sm:w-2/3 p-4">
             <h4 className="text-lg sm:text-xl font-bold text-blue-900 mb-1">Lincoln Hu</h4>
-            <p className="text-gray-600 mb-1 font-bold">Development Lead</p>
+            <p className="text-gray-600 mb-1 font-bold">CTO MVP Studio</p>
             <p className="text-gray-600 mb-2 font-bold">MVP Studio</p>
             <p className="text-black italic text-sm sm:text-base">
               "Chris demonstrated exceptional problem-solving skills and a strong grasp of 
