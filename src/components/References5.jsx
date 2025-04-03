@@ -127,7 +127,7 @@ const References = () => {
               icon={FaMapMarkerAlt}
               text="22 Ikara Rd, Papatoetoe, Auckland, New Zealand 2025"
             />
-            <ContactInfo icon={FaPhone} text="+63 21 066 8629" />
+            <ContactInfo icon={FaPhone} text="+64 21 066 8629" />
             <ContactInfo icon={FaEnvelope} text="Christianjdf87@gmail.com" />
           </div>
         </div>
